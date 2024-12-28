@@ -1,34 +1,19 @@
-import React ,{useState , useEffect} from "react";
-import "./nav.css"
+import { React ,useState , useEffect} from "react";
+import Wordgen from "./Wordgen";
 
 
 export default function Nav(){
     const name = "Nesta Walgwe"
-    const [nameshow,setNameshow] = useState("")
+    const resume = "https://docs.google.com/document/d/e/2PACX-1vTaN4EbjnPHf4s4og_z4IcP_itYhCz0X58paAZJd1xTqmf5kF-TlEjK_bVo2fwcPA5tLIKq9dFHRf3o/pub"
 
-    //function to generate name in nav
-    useEffect(()=>{
-        let currentName =""
-        let i = 0
-        const nameGen = () => {
-            if(i<name.length){
-                currentName += name[i]
-                setNameshow(currentName)
-                i++
-                setTimeout(nameGen,200)
-            }
-        }
+   
 
-        nameGen();
-
-        return  () => clearTimeout(nameGen)                
-        },[name]);
-        //end 
+   const nameshow = Wordgen(name);
     return (
         <div className="nav">
             <h1 className="name"> {nameshow}</h1>
             <div className="buttons">
-                <button className="resume">resume</button>
+                <button onClick={resume} className="resume">resume</button>
                 <button className="dropdown">...</button>
             </div>
         </div>
