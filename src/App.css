@@ -54,39 +54,41 @@
   grid-column: 1 / 3;
   min-height: 10rem;
   border-radius: 1cm;
+  text-align: center;
 }
 
 .item1 *{
   background-color: transparent;
-  text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  line-height: 5px;
-  margin: 5px;
+  display: block;
+  margin-bottom: -5px;
+  
 
 }
 
-.item1 h1{
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 
 
 .profile{
-  height: 170px;
-  width: 170px;
-  border-radius: 1cm;
+  height: 13rem;
+  width: 10rem;
+  border-radius: 0.5cm;
+  
 }
 
 .socialLane{
   display: flex;
   background-color: transparent;
+ 
 }
 
 .socials{
-  height: 50px;
-  width: 50px;
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
+  
+  
 }
 
 .item2{
@@ -96,7 +98,10 @@
   border-radius: 1cm;
   justify-content: center;
   align-items: center;
-  
+  width: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 .item3{
@@ -104,14 +109,73 @@
   grid-row: 1 / 7;
   grid-column: 5 /  8;
   border-radius: 1cm;
+  
+  display: block;
+  max-width: 95%;
+ 
+ 
 }
 
+.item3 *{
+  background-color: transparent;
+  
+}
+
+.item3 h1{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  border-bottom-color: black;
+}
+
+.item3 div{
+  max-width: 100%;
+  display: block;
+}
+
+.item3 div *{
+  margin-bottom: -10px;
+}
+
+.item3 div h3{
+  font-size: 2rem;
+}
 .item4{
   background-color: rgb(109, 202, 16);
   grid-row: 4 / 7;
   grid-column: 1 / 5;
-  min-height: 10rem;
-  min-width: 14rem;
+  padding: 20px;
   border-radius: 1cm;
+  padding: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.item4 *{
+  background-color: transparent;
+  display:block;
+}
+
+.item4 h1{
+  text-align: center;
+}
+
+.item4 div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow-x: auto;
+  
+
+}
+
+.item4 div *{
+  background-color: aqua;
+  border-radius:  5px 7px 5px;
+  margin: 5px;
+  position: relative;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 /*Body*/
