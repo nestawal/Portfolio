@@ -5,8 +5,7 @@ export default function Body (){
    
         let name = "Nesta Walgwe"
         let specialties = ["software developer","IT technician/specialist"]
-        console.log(Wordgen(specialties))
-
+        let bio = Wordgen("My name is Nesta Walgwe ,%nI am a: %n-Software Dev %n -IT Technicician %n I have worked on several projects that you may see after some few scrolls and I am really excited to be able to do more cool things .%nThis is my portfolio have a blast")
         let work = ""
         for(let i = 0;i <specialties.length;i++ ){
             work = specialties[i]
@@ -19,11 +18,7 @@ export default function Body (){
             <div className="item1">
                 <div>
                     <h1>Hello</h1>
-                    <div>
-                    <h3>I am {Wordgen(name)}</h3>
-                    <h3> I am a : </h3>
-                    <h3>{specialties}</h3>
-                    </div>
+                    <p>{bio}</p>
                 </div>
             </div>
 
