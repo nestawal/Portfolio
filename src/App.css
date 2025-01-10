@@ -33,6 +33,7 @@
 .resume{
   background-color: rgb(31, 191, 132);
   border-radius: 15%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .dropdown{
   background-color: rgb(31, 191, 132);
@@ -68,8 +69,7 @@
 }
 
 .item1 h1{
-  margin-left: 10rem;
-  margin-right: 10rem;
+  text-align: center;
   border-bottom-color: black;
 }
 

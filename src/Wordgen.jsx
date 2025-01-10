@@ -13,7 +13,7 @@ import React ,{useState , useEffect} from "react";
                     currentWord += a[i]
                     setWordShow(currentWord)
                     i++
-                    setTimeout(gen,200)
+                    setTimeout(gen,100)
                 }
             }
     

@@ -1,5 +1,9 @@
 import React from "react";
 import Wordgen from "./Wordgen"
+import projects from "./projects"
+import Project from "./Project";
+import Skill from "./Skill";
+import skills from "./skills";
 
 export default function Body (){
    
@@ -12,6 +16,22 @@ export default function Body (){
         }
         let showWork = Wordgen(work)
         console.log(showWork)
+
+        const projCards = projects.map(item => {
+            return(
+                <Project 
+                    {...item}
+                />
+            )
+        })
+
+        const skillCard = skills.map(item => {
+            return(
+                <Skill
+                    {...item}
+                />
+            )
+        })
    
     return(
         <div className="container">
@@ -21,7 +41,7 @@ export default function Body (){
                     <p>{bio}</p>
                 </div>
             </div>
-
+            
             <div className="item2">
                 <img src="/src/pics/profile.jpg" alt="" className="profile"/> 
                 <div className="socialLane">
@@ -32,29 +52,12 @@ export default function Body (){
             </div>
             <div className="item3">
                 <h1>Projects</h1>
-                <div>
-                <h3>Website template</h3>
-                <p>html.css.js</p>
-                </div>
+                <div>{projCards}</div>
             </div>
             <div className="item4">
                 <h1>Skills</h1>
                 <div>
-                    <h3>Frontend Development</h3>
-                    <h3>Design</h3>
-                    <h3>Figma</h3>
-                    <h3>Backend Development</h3>
-                    <h3>Database Management</h3>
-                    <h3>Python</h3>
-                    <h3>Django</h3>
-                    <h3>Javascript</h3>
-                    <h3>React</h3>
-                    <h3>Express</h3>
-                    <h3>Node</h3>
-                    <h3>Mongo</h3>
-                    <h3>sql</h3>
-                    <h3>kotlin</h3>
-                    <h3>Java</h3>
+                   {skillCard}
                 </div>
             </div>
         </div>
