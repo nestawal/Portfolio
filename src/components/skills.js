@@ -6,13 +6,14 @@ const skills = [
     {skill:"NodeJs"},
     {skill:"ExpressJs"},
     {skill:"Html/Css"},
-    {skill:"Frontend Deve"},
     {skill:"Java"},
     {skill:"Kotlin"},
     {skill:"Sql"},
     {skill:"Database management"},
     {skill:"Backend Dev"},
-    {skill:"MongoDb"}
+    {skill:"MongoDb"},
+    {skill:"Frontend Development"},
+    {skill:"Backend Development"}
 
 
 ];

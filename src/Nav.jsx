@@ -1,4 +1,5 @@
 import { React ,useState , useEffect} from "react";
+
 import Wordgen from "./Wordgen";
 
 
@@ -8,13 +9,12 @@ export default function Nav(){
 
    
 
-   const nameshow = Wordgen(name);
+   const nameshow = Wordgen(name,200);
     return (
         <div className="nav">
             <h1 className="name"> {nameshow}</h1>
             <div className="buttons">
-                <button onClick={resume} className="resume">resume</button>
-                <button className="dropdown">...</button>
+                <button className="resume" onClick={ }>resume</button>
             </div>
         </div>
     )

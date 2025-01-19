@@ -1,7 +1,7 @@
 import React ,{useState , useEffect} from "react";
 
  //function to generate words
-   export default function Wordgen(a){
+   export default function Wordgen(a,t){
    
         const [wordShow,setWordShow] = useState("")
 
@@ -13,7 +13,7 @@ import React ,{useState , useEffect} from "react";
                     currentWord += a[i]
                     setWordShow(currentWord)
                     i++
-                    setTimeout(gen,100)
+                    setTimeout(gen,t)
                 }
             }
     

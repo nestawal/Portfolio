@@ -1,5 +1,11 @@
 const projects = [
     {
+        name:"Website template",
+        stack:"Reactjs,Html,Css,Js",
+        link:"https://github.com/nestawal/JSwebProj",
+        info:"A template example for a website that I can create for a client"
+    },
+    {
         name: "Keja App",
         stack:"Reactjs,Nodejs,Expressjs,MongoDb",
         link:"https://github.com/nestawal/KejaApp",
@@ -22,13 +28,8 @@ const projects = [
         stack:"Kotlin,Ktor",
         link:"https://github.com/nestawal/ChatApp-Server",
         info:"serverside logic for a chatapp"
-    },
-    {
-        name:"Website template",
-        stack:"Reactjs,Html,Css,Js",
-        link:"https://github.com/nestawal/JSwebProj",
-        info:"A template example for a website that I can create for a client"
     }
+   
 
   /*  {
         name:,

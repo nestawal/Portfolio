@@ -1,9 +1,12 @@
-*{
-  display: grid;
-  background-color: rgb(38, 88, 71);
+
+body{
+  background-color: rgba(84, 116, 52, 0.619);
+  
+  
 }
 
 /*Nav*/
+
 .nav{
   background-color: rgb(101, 91, 91);
   height: 2rem;
@@ -44,26 +47,28 @@
 /*Body*/
 .container{
   display: grid;
-  grid-gap: 1rem;
+  
   height: 90vh;
-  min-height: 80%;
+  max-height: 80%;
 }
 
 .item1{
-  background-color: rgba(45, 33, 119, 0.315);
+  background-color: rgba(255, 255, 255, 0.26);
   grid-row: 1 / 5;
-  grid-column: 1 / 3;
-  min-height: 10rem;
+  grid-column: 1 / 4;
+  max-height: 300px;
   border-radius: 1cm;
- 
-  padding: auto;
+  text-align: center;
+  
+  margin-right: 35px;
+  margin-left: 35px;
 }
 
 .item1 *{
   background-color: transparent;
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: block;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   
 
 }
@@ -71,82 +76,112 @@
 .item1 h1{
   text-align: center;
   border-bottom-color: black;
+  font-size: 50px;
+  margin-top: 0%;
+  text-decoration: underline;
+}
+
+.item1 div{
+  font-size: 18px;
+  margin: 20px;
+}
+
+.item1 div ol{
+  margin-bottom: 1px;
 }
 
 
-
-
 .profile{
-  height: 13rem;
-  width: 10rem;
+  height: 230px;
+  width: 190x;
   border-radius: 0.5cm;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   
 }
 
 .socialLane{
   display: block;
   background-color: transparent;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .socials{
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  
-  
+  height:35px;
+  width: 35px;
+  border-radius: 10%;
+  background-color: none;
+  margin-bottom: 10px;
 }
 
 .item2{
-  background-color: rgb(49, 49, 113);
-  grid-row: 1 / 5;
-  grid-column: 3 / 5;
+  background-color: rgba(255, 255, 255, 0.26);
+  grid-row: 1 / 4;
+  grid-column: 4/ 5;
   border-radius: 1cm;
   justify-content: center;
   align-items: center;
-  width: 15rem;
-  display: flex;
+  padding: auto;
+  display: block;
   flex-wrap: wrap;
-  overflow: auto;
+  width: fit-content;
+  margin-bottom: 10px;
+  max-height: fit-content;
 }
 
 .item3{
-  background-color: rgb(90, 8, 8);
+ 
   grid-row: 1 / 7;
   grid-column: 5 /  8;
+ 
+}
+
+.container3{
+  background-color: rgba(255, 255, 255, 0.26);
   border-radius: 1cm;
-  
-  display: block;
+  max-height: 80%;
   max-width: 95%;
- 
- 
+  overflow-y: auto;
+  display: block;
+  padding: 10px;
 }
 
-.item3 *{
-  background-color: transparent;
   
-}
+  
 
-.item3 h1{
+
+.container3 h1{
   margin-left: 10rem;
   margin-right: 10rem;
   border-bottom-color: black;
+  border-width: 5px;
+  text-decoration: underline;
 }
 
-.item3 div{
+.container3 div{
   max-width: 100%;
   display: block;
 }
 
-.item3 div *{
-  margin-bottom: -10px;
+.container3  div *{
+  margin-bottom: 10px;
 }
 
-.item3 div h3{
+.container3  div h3{
   font-size: 2rem;
 }
+
+.linkstack{
+  display: flex;
+ 
+}
+
 .item4{
-  background-color: rgb(109, 202, 16);
+  background-color: rgba(255, 255, 255, 0.26);
   grid-row: 5 / 7;
   grid-column: 1 / 5;
   padding: 20px;
@@ -163,6 +198,7 @@
 
 .item4 h1{
   text-align: center;
+  text-decoration: underline;
 }
 
 .item4 div{
@@ -175,7 +211,7 @@
 }
 
 .item4 div *{
-  background-color: aqua;
+  background-color: rgba(5, 91, 57, 0.6);
   border-radius:  5px 7px 5px;
   margin: 5px;
   position: relative;
@@ -185,3 +221,45 @@
   padding: 5px;
 }
 /*Body*/
+ /*phone*/
+ @media(max-width: 1000px){
+  body{
+    display: block;
+  }
+    .nav{
+      height: 10%;
+      min-height: 10%;
+    }
+
+    .container{
+      display: block;
+      width: 100%;
+      height: 90%;
+    }
+
+    .item1{
+      width: 100%;
+    }
+
+    .item2{
+      width: 100%;
+      display: block;
+      height: 600px;
+    }
+
+    .item2 *{
+      margin: auto;
+    }
+
+    .item3{
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .item4{
+      width: 100%;
+      margin-right: 150px;
+    }
+  
+
+ }
